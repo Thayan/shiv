@@ -1,0 +1,587 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Happy Anniversary!</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="styles/jquery.fullpage.css">
+        <link href="crossword/crossword.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="styles/animate.min.css">
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/jquery.fullpage.js"></script>
+        <script src="crossword/crossword.js"></script>
+
+    <script>
+
+        $(function () {
+            var grid = ['@@@@@@@@@@@@@@@@ @@@@@@',
+                        '@@@@@@@@@@@@@@@     @@@',
+                        '@@@@@@@@@@@@@@ @ @@@@@@',
+                        '@@@@@@@@@@@@@@ @ @@@@@@',
+                        '@@@@@@@@@@@@@@ @ @@@@@@',
+                        '@@@@@@@          @@@@@@',
+                        '@@@@@@@@@@@@@@ @ @@@@@@',
+                        '@@@@@@@@@@@@@@@    @@@@',
+                        '@@@@@@@@@@@@@ @@ @@@@@@',
+                        '@@@      @@          @@',
+                        '@@@@@@ @@@ @@ @@ @ @ @@',
+                        '@@@@@@ @@@ @@ @@@@ @ @@',
+                        '@ @@        @ @@ @ @@@@',
+                        '@ @@@@ @@@ @@ @@ @@@@@@',
+                        '        @      @ @ @@@ ',
+                        '@ @@@@ @@@ @@ @@ @ @@@ ',
+                        '@ @@        @ @@ @ @@@ ',
+                        '@ @@@@ @@@ @@ @@ @ @@@ ',
+                        '@ @@@@@@@@ @           ',
+                        '@@@@@@@@@@ @@ @@@@ @@@ ',
+                        '@@@@@@@@@@@@@ @@@@ @@@ ',
+                        '@@@@@@@@@@@@@   @@ @@@ ',
+                        '@@@@@@@@@@@@@@@@@@ @ @ ',
+                        '@@@@@@@@@@@@@@@@@@@@ @ ',
+                        '@@@@@@@@@@@@@          ',
+                        '@@@@@@@@@@@@@@@@@@@@ @@',
+                        '@@@@@@@@@@@@@@@@@@@@ @@',
+                        '@@@@@@@@@@@@@@@@@@@@ @@'];
+            var acrossClues = [
+                                'SEPTEMBER | The greatest show of all time. It\'s legen-waitforit-DARY%%HIMYM',
+                                'MAY | We have both had one, Asifa has one soon%%GRADUATION',
+                                'DECEMBER | We say it everyday%%LOVE',
+                                'OCTOBER | It\'s a divine vineyard%%LLAMAS',
+                                'AUGUST | The home of Robin Hood%%NOTTINGHAM',
+                                'APRIL | From the album Daddy K In The Mix Vol. 9%%DONT MIND',
+                                'NOVEMBER | You only get one a year!%%BIRTHDAY',
+                                'JANUARY | That place on the Thames%%HENLEY',
+                                'JULY | We played it in Shoreditch, before Indian food%%MINIGOLF',
+                                'JUNE | When you think of paris, you think of...%%EIFFEL TOWER',
+                                'MARCH | One is an actor and one is a pianist%%SEB',
+                                'FEBRUARY | The _____ of Tintin%%ADVENTURES'];
+
+            var downClues = ['MAY | Higher Education Marketing%%VISIONPOINT',
+                                'JUNE | We had to cross the channel to get there%%PARIS',
+                                'SEPTEMBER | The other side%%STRANGER THINGS',
+                                'OCTOBER | Blue Ridge _____%%MOUNTAINS',
+                                'APRIL | Usually celebrated on the day after the full moon in march%%HOLI',
+                                'MARCH | One is an actor and one is a pianist%%MIA',
+                                'JANUARY | Winter can be a wonderful time%%WONDERLAND',
+                                'JULY| Some of the cheapest clothes in all the land%%PRIMARK',
+                                'AUGUST | The attitudes and behavior that are characteristic of a particular social group or organization%%CULTURE',
+                                'NOVEMBER | You\'re _____%%BEAUTIFUL',
+                                'FEBRUARY | We\'ve had so many new _____ on our travels%%EXPERIENCES',
+                                'DECEMBER | We\'ve experienced so many _____ together%%FIRSTS'];
+
+            $('#crossWordContainer').crossword({ gridMask: grid, acrossClues: acrossClues, downClues: downClues, validateAnswer: 'clue' })
+        });
+    </script>
+    </head>
+    <body>
+        <div id="navbar">
+        <div id="heartDiv">
+            <img id="heartImg" src="imgs/hearts/heart.png" border="0" width="291" height="236" orgWidth="291" orgHeight="236" usemap="#image-maps-2017-10-26-150755" alt="" />
+            <map name="image-maps-2017-10-26-150755" id="ImageMapsCom-image-maps-2017-10-26-150755">
+            <area shape="rect" coords="289,234,291,236" alt="Image Map" style="outline:none;" title="Image Map" href="heartImg" />
+
+            <area id="heartP1" alt="" title="January" href="#jan" shape="poly" coords="66,99,70,89,76,80,84,68,86,64,85,25,78,20,77,13,78,7,82,4,66,6,51,13,40,22,29,35,22,49,19,67,21,87,24,99,28,112,37,124,37,113,42,103,56,99" style="outline:none;" target="_self" onmouseover="if(document.images) document.getElementById('heartImg').src= 'imgs/hearts/heartpjansel.png';" onmouseout="getMouseLeaveImg()" />
+
+            <area id="heartp2" alt="" title="February" href="#feb" shape="poly" coords="94,125,99,117,108,112,117,112,118,100,123,92,121,85,127,67,134,59,138,51,144,48,139,33,131,23,122,15,111,9,100,5,90,4,83,4,76,11,78,20,85,27,85,49,86,63,77,79,66,97,76,108,87,120" style="outline:none;" target="_self"  onmouseover="if(document.images) document.getElementById('heartImg').src= 'imgs/hearts/heartpfebsel.png';" onmouseout="getMouseLeaveImg()" />
+
+            <area id="heartp3" alt="" title="March" href="#mar" shape="poly" coords="90,177,89,170,90,162,95,157,100,152,94,144,93,137,93,126,94,124,87,120,80,113,76,107,69,100,62,99,53,99,43,104,39,110,37,119,37,125,43,133,54,147,73,163" style="outline:none;" target="_self" onmouseover="if(document.images) document.getElementById('heartImg').src= 'imgs/hearts/heartpmarsel.png';" onmouseout="getMouseLeaveImg()" />
+
+            <area id="heartp4" alt="" title="April" href="#apr" shape="poly" coords="143,48,138,49,136,55,131,61,126,70,122,80,122,88,121,94,118,102,118,111,120,118,127,119,130,117,136,116,139,112,140,104,145,95,145,80,150,74,155,68,156,61,156,57,150,54" style="outline:none;" target="_self"  onmouseover="if(document.images) document.getElementById('heartImg').src= 'imgs/hearts/heartpaprsel.png';" onmouseout="getMouseLeaveImg()" />
+
+            <area id="heartp5" alt="" title="May" href="#may" shape="poly" coords="136,154,146,151,152,149,152,146,145,135,141,128,134,124,131,119,124,119,121,118,117,113,108,113,99,118,93,126,92,138,96,146,102,152,96,156,92,160,91,167,89,173,91,178,124,205,126,200,130,195,136,193,144,195,148,191,154,184,147,183,144,176,144,173,140,168,136,162" style="outline:none;" target="_self"  onmouseover="if(document.images) document.getElementById('heartImg').src= 'imgs/hearts/heartpmaysel.png';" onmouseout="getMouseLeaveImg()" />
+
+            <area id="heartp6" alt="" title="June" href="#jun" shape="poly" coords="152,146,159,144,170,139,177,132,190,127,193,115,191,103,191,97,191,88,188,82,183,72,178,70,171,67,166,66,159,66,154,66,152,73,146,81,145,92,143,100,139,108,134,116,130,118,141,127,147,139" style="outline:none;" target="_self"  onmouseover="if(document.images) document.getElementById('heartImg').src= 'imgs/hearts/heartpjunsel.png';" onmouseout="getMouseLeaveImg()" />
+
+            <area id="heartp7" alt="" title="July" href="#jul" shape="poly" coords="123,206,130,213,134,221,144,233,147,224,155,216,165,206,170,202,179,194,184,189,178,184,174,184,172,181,168,182,164,182,158,184,151,188,146,195,140,193,134,193,127,198" style="outline:none;" target="_self"  onmouseover="if(document.images) document.getElementById('heartImg').src= 'imgs/hearts/heartpjulsel.png';" onmouseout="getMouseLeaveImg()" />
+
+            <area id="heartp8" alt="" title="August" href="#aug" shape="poly" coords="172,181,172,175,179,171,179,167,183,162,187,158,191,154,190,146,194,139,196,134,197,128,192,126,186,127,179,132,168,139,162,143,160,146,156,146,153,146,151,150,146,151,140,152,136,156,135,162,139,169,146,174,147,180,154,185,162,183,168,180" style="outline:none;" target="_self"  onmouseover="if(document.images) document.getElementById('heartImg').src= 'imgs/hearts/heartpaugsel.png';" onmouseout="getMouseLeaveImg()" />
+
+            <area id="heartp9" alt="" title="September" href="#sep" shape="poly" coords="258,116,252,112,248,105,240,103,232,105,219,113,209,121,201,121,197,124,194,138,192,146,191,150,187,157,184,160,180,164,180,170,173,175,174,182,179,185,184,190,204,175,224,158,244,138,253,127" style="outline:none;" target="_self"  onmouseover="if(document.images) document.getElementById('heartImg').src= 'imgs/hearts/heartpsepsel.png';" onmouseout="getMouseLeaveImg()" />
+
+            <area id="heartp10" alt="" title="October" href="#oct" shape="poly" coords="190,127,197,129,199,122,209,121,221,113,231,106,241,103,239,100,227,91,219,81,213,70,212,65,203,55,180,69,190,85,191,102,193,117" style="outline:none;" target="_self"  onmouseover="if(document.images) document.getElementById('heartImg').src= 'imgs/hearts/heartpoctsel.png';" onmouseout="getMouseLeaveImg()" />
+
+            <area id="heartp11" alt="" title="November" href="#nov" shape="poly" coords="155,66,166,66,175,70,180,70,203,55,204,47,202,42,203,37,203,14,201,10,203,5,191,6,177,11,165,17,156,28,149,38,145,48,155,56,154,62" style="outline:none;" target="_self" onmouseover="if(document.images) document.getElementById('heartImg').src= 'imgs/hearts/heartpnovsel.png';" onmouseout="getMouseLeaveImg()" />
+
+            <area id="heartp12" alt="" title="December" href="#dec" shape="poly" coords="203,55,212,64,216,78,227,90,240,102,247,105,258,116,266,102,270,84,271,67,267,47,258,30,248,19,230,9,221,6,211,4,204,4,203,12,204,26,204,40" style="outline:none;" target="_self"  onmouseover="if(document.images) document.getElementById('heartImg').src= 'imgs/hearts/heartpdecsel.png';" onmouseout="getMouseLeaveImg()" />
+
+            </map>
+            </div>
+            <div id="navCrossword">
+                <a href="#crossword">
+                    <div class="wrapper">
+                        <div class="clip-text clip-text_tree">Crossword</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div id="wrapper">
+            <div class="section" id="section0" data-anchor="intro">
+                <div id="startDiv"><a id="startButton">Start</a></div>
+                <div id="chatWindow">
+                    <div class="clear"></div>
+                    <div class="intromessage leftMessage" id="introMsg1">
+                      <p>Oh hey!</p>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="intromessage rightMessage" id="introMsg2">
+                      <p>Oh wow!</p>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="intromessage leftMessage" id="introMsg3">
+                      <p>What is this?</p>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="intromessage rightMessage" id="introMsg4">
+                      <p>It's sorta like a treasure hunt, but it's not</p>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="intromessage leftMessage" id="introMsg5">
+                      <p>HABAHSDBAKWQEBHASBD</p>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="intromessage rightMessage" id="introMsg6">
+                      <p>Exactly! It goes through 12 months</p>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="intromessage rightMessage" id="introMsg7">
+                      <p>and each month has clues for 2 words in it</p>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="intromessage leftMessage" id="introMsg8">
+                      <p>la la la la la</p>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="intromessage rightMessage" id="introMsg9">
+                      <p>At the end of it there's a crossword</p>
+                    </div>
+                    <div class="intromessage leftMessage" id="introMsg10">
+                      <p>and I have to solve it?</p>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="clear"></div>
+                    <div class="intromessage rightMessage" id="introMsg11">
+                      <p>Yes! Goodluck!</p>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="intromessage rightMessage" id="introMsg12">
+                      <p>Oh and happy anniversary!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="section" id="section1" data-anchor="dec">
+                <div class="title" id="titleDec"></div>
+                <div class="desc" id="descDec">
+                    <div id="decText">
+                        Looking back to December, it's a bit insane - we really took a leap with this whole thing. I appreciate you being the first one to come and visit. Our official journey began on the 11th December 2016, and we've come a long way! Who knew we would both find love an ocean away.
+
+                        This whole year has been a year of firsts for me, I've grown a lot and part of that is thanks to you. I'd like to think I've had an equal influence on you. As we both get started on adulthood I hope I can be there for you as someone who will support you no matter what, and vice versa.
+                    </div>
+                </div>
+            </div>
+            <div class="section" id="section2" data-anchor="jan">
+                <div class="title" id="titleJan"></div>
+                <div class="desc" id="descJan1">
+                    Our official journey began on the 11th December, when we took a short road trip. We were finally able to spend time together, and explore a completely unknown area together! The scenery was amazing, but there was nothing there more beautiful than you.
+                </div>
+                <div class="desc" id="descJan2">
+                    London is especially wonderful in the winter, there was so much to do and see. The lights brought a bit of magic to what seemed like an already special time in both our lives...
+                </div>
+            </div>
+            <div class="section" id="section3" data-anchor="feb">
+                <div class="title" id="titleFeb"></div>
+                <div class="desc" id="descFeb">
+                One thing that has made the last 12 months so exciting is the amount of trips we've been on together. From Boone, to Paris - we've done a lot for a year. We've gone from beaches to mountains, from countryside to cities; we've been very adventurous! One thing that didn't actually hit me until I started writing this is the amount of hours we've spent on the road! 
+
+                I hope you've had an amazing time going through all these new experiences with me!
+                </div>
+            </div>
+            <div class="section" id="section4" data-anchor="mar">
+                <div class="title" id="titleMar"></div>
+                <div class="desc" id="descMar">
+                    <div id="textMar">
+                    Although this was only the second time we were meeting as a couple, I felt like I had known you for so long, and that we had such a deep connection. How appropriate that we would watch La La Land together, although the story wasn't entirely comparable to ours - I feel like I could find similarities between our relationship and the couple in the movie.
+                    </div>
+                </div>
+                <audio id="musicPlayer" controls>
+                    <source src="lalaland.mp3" type="audio/ogg">
+                </audio>
+            </div>
+            <div class="section" id="section5" data-anchor="apr">
+                <div class="title" id="titleApr"></div>
+                <div id="aprHeader">
+                    <div id="aprText">
+                    You're constantly introducing me to new things in life, and finally after years of saying, "hmmm maybe I'll do it next year", you convinced me to take part in that Indian festival we all know and love... Yeah that was one dinky festival, but I believe you when you say that not all future events will be like that!
+
+                    Not only have you introduced me to new festivals, you've overplayed several songs to the point where I can't listen to them anymore. Thanks to you, and Kent Jones...
+                    </div>
+                </div>
+            </div>
+            <div class="section" id="section6" data-anchor="may">
+                <div class="title" id="titleMay"></div>
+                <div id="mayText1" class="mayText">
+                I feel like you're a different person now, than you were when we first started talking (not necessarily for the worse). May was a big month for you; you finally finished college and were starting your adult life. 
+                </div>
+                <div id="mayText2" class="mayText">
+                    I can't tell you how proud I am that you did so well in college, and took it upon yourself to push and do an internship during your final year too.
+                </div>
+                <div id="mayText3" class="mayText">
+                     I've been there, and I know how tough it can be to constantly have to work and dedicate time to coursework - when your friends are out or chilling during their free time, you're at home studying because you need to make the most of your free time.
+                </div>
+                <div id="mayText4" class="mayText">
+                    Not only that, you decided to continue working for your current company right after graduation. I also did this and it's tough! I'm glad you took a bit of time off later in the summer to come and see me though.
+                    </div>
+    
+            </div>
+            <div class="section" id="section7" data-anchor="jun">
+                <div class="title" id="titleJun"></div>
+                <div class="" id="descJun">
+                    <div class="" id="textJun">
+                        Okay we didn't actually take our France trip during June, but it's close enough! This city was amazing, we truly found ourselves immersed in the culture, even though we were only there for a few days. I really had a wonderful time, and compared to most couples going on a trip this early in a relationship can be a strain. But I think we did well. We each planned one day, and I enjoyed both days.
+
+                        I'm sorry we couldn't get the perfect picture that you wanted in front of that iconic antenna, maybe we will be able to do that some other day...
+                    </div>
+                </div>
+                <video id="parisVid" height="550" controls loop muted autoplay>
+                  <source src="paris.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="section" id="section8" data-anchor="jul">
+                <div class="title" id="titleJulBar"></div>
+                <div class="title" id="titleJul">
+                <div id="textJul">
+                    When you came to the UK in the summer, there was one shop that you visited more than any other. We also played against each other in a luck-based sport, which is of course why you won!
+                </div>
+                </div>
+            </div>
+            <div class="section" id="section9" data-anchor="aug">
+                <div class="title" id="titleAug"></div>
+                <div id="textAug1">
+                    I feel like I'm also a different person now than I was a year ago. This year I made one the biggest decisions of my life, funnily enough it came quite easily to me - I decided within a day. That decision was of course to uproot my life and move north. The transition was tough, and it gets lonely sometimes but our relationship has helped me so much. Since we're in a LDR, the way we communicate didn't change all that much, but by moving we were able to spend more time facetiming and talking. It's simple but it really did help, and continues to do so.
+                </div>
+                <div id="textAug2">
+                    Another thing I've really embraced this year has been our culture, which is mostly down to you. You made me open up to south East Asian ideas and customs. I had never watched a Hindi movie prior to talking to you, but now I've already seen 5 or 6. Not only that, I don't think I would've ever considered making Sri Lankan food let alone attempting it - this is down to you.
+
+                </div>
+            </div>
+            <div class="section" id="section10" data-anchor="sep">
+                <div class="title" id="titleSep"></div>
+                <div id="descSept">
+                    <div class="clear"></div>
+                    <div class="rightMessage">
+                      <p>Life in a LDR is tough, but I feel that we make the most of it.</p>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="leftMessage">
+                      <p>We communicate more than most couples in the same city do!</p>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="rightMessage">
+                      <p>One thing we do that I really love and want to keep doing is netflix and chill (although we don't really chill)!</p>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="leftMessage">
+                      <p>We've seen so many shows together, granted I saw a few of them before but it was still nice...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="section" id="section11" data-anchor="oct">
+                <div class="title" id="titleOct"></div>
+                <div id="descOct">
+                <div id="textOct">
+                    October was full of highs, and just general autumn festivities. Boone has to be one of my favourite places now, we didn't spend much time there but I really did love the whole experience. 
+
+                    After Boone you made the effort of surprising me and taking me to a vineyard, it was awesome - shame the animals there were a little moody!
+                </div>
+                </div>
+            </div>
+            <div class="section" id="section12" data-anchor="nov">
+            <div id="novSnapchat"></div>
+                <div class="title" id="titleNov"></div>
+                  <div id="textNov1" class="caption-container">
+                    <div class="caption">November was a pretty uneventful month since we had just met in October, and were anticipating Christmas when we could again be together!</div>
+                  </div>    
+                  <div id="textNov2" class="caption-container">
+                    <div class="caption">One thing that did happen though is a certain someone turned 23</div>
+                  </div>    
+                  <div id="textNov3" class="caption-container">
+                    <div class="caption">said person has never been more beautiful <3</div>
+                  </div>    
+            </div>
+            <div class="section" id="crosswordPage" data-anchor="crossword">
+                <div id="crossWordContainer"></div>
+                <div id="winningCaption"></div>
+            </div>
+        </div>
+        <script type="text/javascript">
+
+        var selectedPage = "";
+        var vid = document.getElementById("musicPlayer"); 
+        
+        function getSelectedPage()
+        {
+            return selectedPage;
+        }
+        function setSelectedPage(anchorlink)
+        {
+            this.selectedPage = anchorlink;
+        }
+        function getActivePageNavImg()
+        {
+            var selectPage = getSelectedPage();
+            if(selectPage == "crossword")
+            {
+                return 'imgs/hearts/heart.png';
+            }
+            return 'imgs/hearts/heartp' + selectPage + 'sel.png';
+        }
+
+        function getMouseLeaveImg()
+        {
+            document.getElementById('heartImg').src= getActivePageNavImg();
+        }
+
+            $('#wrapper').fullpage({
+                verticalCentered: false,
+                afterLoad: function(anchorLink, index)
+                {
+                    if(anchorLink == "intro")
+                    {
+                    }
+                    if(index <= 13 && index > 1)
+                    {
+                        setSelectedPage(anchorLink);
+                    }
+                    document.getElementById('heartImg').src= getActivePageNavImg();
+
+                    if(anchorLink == 'crossword'){
+                        document.getElementById('heartImg').src= "imgs/hearts/heart.png";
+                        setSelectedPage(anchorLink);
+                    }
+                    if(anchorLink == "mar")
+                    {
+                        vid.play();
+                    }
+                    else
+                    {
+                        vid.pause();
+                    }
+                    if(anchorLink == 'nov'){
+                        $("#navCrossword").slideDown("fast");
+                    }
+                }, 
+                onLeave: function (index, nextIndex, direction)
+                {
+                    if(index == 1)
+                    {
+                        $('#heartDiv').removeClass('animated fadeOutLeft');
+                        $('#heartDiv').addClass('animated fadeInLeft');
+                        $('#navCrossword').removeClass('animated fadeOutRight');
+                        $('#navCrossword').addClass('animated fadeInRight');
+                    }
+                    if(nextIndex == 1) //intro
+                    {
+                        $('#heartDiv').removeClass('animated fadeInLeft');
+                        $('#heartDiv').addClass('animated fadeOutLeft');
+                        $('#navCrossword').removeClass('animated fadeInRight');
+                        $('#navCrossword').addClass('animated fadeOutRight');
+                    }
+
+                    if(nextIndex == 2) //Dec
+                    {
+                        $("#descDec").addClass('animated slideInLeft');
+                        $("#titleDec").addClass('animated slideInLeft');
+                        setTimeout(function(){
+                            $("#titleDec").removeClass('animated slideInLeft');
+                              $('#titleDec').css({
+                                //for firefox
+                                "-moz-animation-name":"rotatebox",
+                                "-moz-animation-duration":"0.3s",
+                                "-moz-animation-iteration-count":"1",
+                                    "-moz-animation-fill-mode":"forwards",
+                                //for safari & chrome
+                                "-webkit-animation-name":"rotatebox",
+                                "-webkit-animation-duration":"0.3s",
+                                "-webkit-animation-iteration-count":"1",
+                                "-webkit-animation-fill-mode" : "forwards",
+                                });
+                        }, 1270);
+                    }
+                    else if(nextIndex == 3) //Jan
+                    {
+                        $("#titleJan").addClass('animated bounceInDown');
+                        $("#descJan1").addClass('animated fadeIn');
+                        $("#descJan2").addClass('animated fadeIn');
+                    }
+                    else if(nextIndex == 4) //Feb
+                    {
+                        $("#descFeb").addClass('animated fadeIn');
+                        $("#titleFeb").addClass('animated slideInLeft');    
+                    }
+                    else if(nextIndex == 5) //Mar
+                    {
+                        $("#titleMar").addClass('animated slideInRight');   
+                        $("#descMar").addClass('animated slideInRight');
+                        $("#descMar").animate({"top": 160}, 700);
+                        setTimeout(function(){
+                            $("#textMar").animate({"height":325}, 1000);
+                            $("#textMar").fadeIn();
+                        }, 270);
+                        $("#descMar").animate({"height":325},800);
+                    }
+                    else if(nextIndex == 6) //Apr
+                    {
+                        setTimeout(function(){
+                            $("#aprHeader").animate({"width": "40%"}, 700).animate({"height": "33%"}, 700);
+                            $("#aprHeader").css("margin-left", "auto");
+                            $("#aprHeader").css("margin-right", "auto");
+                            $("#aprHeader").css("position", "relative");
+                            
+                            setTimeout(function(){
+                                $("#aprText").fadeIn().delay( '800' );
+                            }, 750);
+                        }, 500);
+                    }
+                    else if(nextIndex == 7) //May
+                    {
+                        $("#titleMay").addClass('animated slideInLeft');    
+                        $("#mayText1, #mayText2, #mayText3, #mayText4").each(function(i) {
+                          $(this).delay(i*1100).fadeIn(1100);
+                        });
+                    }
+                    else if(nextIndex == 8) //June
+                    {
+                        $("#titleJun").addClass('animated flipInY');
+                        $('#parisVid').css('display', 'initial');
+                        $('#parisVid').addClass('animated bounceInRight');
+                        setTimeout(function(){
+                        $("#descJun").animate({"height": "50%"}, { duration: 1000});
+                        }, 700);
+                        setTimeout(function(){
+                            $("#descJun").animate({"top":"45%"}, { duration: 400});
+                        }, 800);
+
+                        setTimeout(function(){
+                            $("#descJun").animate({"width":"35%"}, { duration: 400, queue: false});
+                            $("#descJun").animate({"left":"3%"}, { duration: 400, queue:false});
+                            $("#textJun").addClass("animated bounceIn");
+                            $("#textJun").css("display", "block");
+                        }, 2000);
+                    }
+                    else if(nextIndex == 9) //July
+                    {
+                        $("#titleJul").css("background-position", "top");
+                        $("#titleJul").animate({"top":"15%"}, { duration: 1400});
+                        setTimeout(function(){
+                            $("#titleJul").animate({"opacity":"0.8"}, { duration: 400, queue: false});
+                            $("#titleJulBar").animate({"opacity":"0.8"}, { duration: 400, queue: false});
+                            $("#titleJul").animate({"height":"45%"}, { duration: 700, queue: false});
+                            $("#titleJul").animate({"width":"25%"}, { duration: 700, queue: false});
+                        }, 1500);
+
+                        setTimeout(function(){
+                            $("#textJul").css("display", "block");
+                            $("#textJul").addClass("animated bounceInRight");
+                        }, 1700)
+                    }
+                    else if(nextIndex == 10) //August
+                    {
+                        $("#titleAug").addClass("animated flipInX");
+                        $("#textAug1").addClass("animated zoomInRight");
+                        $("#textAug2").addClass("animated zoomInLeft");
+                    }
+                    else if(nextIndex == 11) //Sept
+                    {
+                        $("#titleSep").addClass("animated zoomInDown");
+                        $(".rightMessage").addClass("animated zoomInRight");
+                        $(".leftMessage").addClass("animated zoomInLeft");
+                    }
+                    else if(nextIndex == 12) //Oct
+                    {
+                        $("#titleOct").addClass("animated bounceIn");
+                        $("#descOct").addClass("animated bounceInLeft");
+                    }
+                    else if(nextIndex == 13) //Nov
+                    {
+                        $(".caption-container").addClass("animated flipInX");
+                        $("#titleNov").addClass("animated slideInUp");
+                    }
+                }
+            });
+$.fn.extend({
+    animateCss: function (animationName) {
+        var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+        this.addClass('animated ' + animationName).one(animationEnd, function() {
+            $(this).removeClass('animated ' + animationName);
+        });
+        return this;
+    }
+});
+        function checkIfAllCorrect()
+        {
+            var numberOfCorrectCells = $('#crossWordContainer .cwd-tile-correct').length;
+            if(161 == numberOfCorrectCells)
+            {
+                $("#winningCaption").show();
+                alert("congrats fam");
+            }
+        }
+
+        function chatChainMessages(chatIndex)
+        {
+            var selectedChat = "#introMsg" + chatIndex;
+            var chatTop = parseInt($(selectedChat).css("top")) - 250;
+            $(selectedChat).show().animate({"top": chatTop + "px"}, { duration: 1500}).delay(1800).fadeOut();
+        }
+        function sleep(time) {
+            return new Promise(resolve => {
+                setTimeout(resolve, time)
+            })
+        }
+
+        $("#startButton").click(function(){
+          $("#startDiv").css("display", "none");
+          $("#section0").css("background-image", "none");
+
+            sleep(2000).then(() => {
+                chatChainMessages(1);
+                return sleep(2300);
+            }).then(() => {
+                chatChainMessages(2);
+                return sleep(2300)
+            }).then(() => {
+                chatChainMessages(3);
+                return sleep(2300)
+            }).then(() => {
+                chatChainMessages(4);
+                return sleep(2300)
+            }).then(() => {
+                chatChainMessages(5);
+                return sleep(2300)
+            }).then(() => {
+                chatChainMessages(6);
+                return sleep(2300)
+            }).then(() => {
+                chatChainMessages(7);
+                return sleep(2300)
+            }).then(() => {
+                chatChainMessages(8);
+                return sleep(2300)
+            }).then(() => {
+                chatChainMessages(9);
+                return sleep(2300)
+            }).then(() => {
+                chatChainMessages(10);
+                return sleep(2300)
+            }).then(() => {
+                chatChainMessages(11);
+                return sleep(2300)
+            }).then(() => {
+                chatChainMessages(12);
+                return sleep(3500)
+            }).then(() => {
+                $.fn.fullpage.moveSectionDown();
+            });
+        });
+        </script>
+    </body>
+</html>

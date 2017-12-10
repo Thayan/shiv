@@ -1,0 +1,857 @@
+/* Defining each section background and styles
+			* --------------------------------------- */
+      #section0{
+        background-image: url(imgs/introPage.jpg);
+        width: 100%;
+      }
+      #section1{
+        background-image: url(imgs/pic1.jpg);
+        width: 100%;
+          z-index: 100;
+      }
+			#section2{
+				background-image: url(imgs/pic2.jpg);
+				width: 100%;
+			}
+			#section3{
+				background-image: url(imgs/pic3.jpg);
+				width: 100%;
+			}
+			#section4{
+				background-image: url(imgs/pic4.jpg);
+				width: 100%;
+			}
+			#section5{
+				background-image: url(imgs/pic5.jpg);
+				width: 100%;
+			}
+			#section6{
+				background-image: url(imgs/pic6.png);
+				width: 100%;
+			}
+			#section7
+			{
+				width: 100%;
+				background-image: url(imgs/pic7.jpg);
+			}
+			#section8
+			{
+				width: 100%;
+				background-image: url(imgs/pic8.jpg);
+			}
+			#section9
+			{
+				width: 100%;
+				background-image: url(imgs/pic9.jpg);
+			}
+			#section10
+			{
+				width: 100%;
+				background-image: url(imgs/pic10flip.png);
+			}
+			#section11
+			{
+				width: 100%;
+				background-image: url(imgs/pic11.jpg);
+			}
+			#section12
+			{
+				width: 100%;
+				background-image: url(imgs/pic12.jpg);
+			}
+				/* Centered texts in each section
+			}
+			/* Backgrounds will cover all the section
+			* --------------------------------------- */
+			.section{
+				background-size: cover;
+			}
+            #cwd-grid tr td 
+            {
+                height: 20px;
+            }
+            #cwd-clues
+            {
+                font-size: 80%; 
+                top: 50px;
+                margin-left: 25px;
+            }
+			#navbar
+			{
+				width: 100%;
+				height: 0px;
+				top: 0px;
+				position: absolute;
+				z-index: 999;
+  				-webkit-animation-duration: 1.2s;
+  				-moz-animation-duration: 1.2s;
+  				animation-duration: 1.2s;
+			}
+			#crossWordContainer
+			{
+        z-index: 9999;
+				width: 100%;
+        height: 100%;
+				position: absolute;
+				left: 300px;
+				top: 5%;
+			}
+			#navCrossword
+			{
+				position: absolute;
+				right: 0px;
+				top: 0px;
+				display: none;
+			}
+
+
+
+
+			* {
+				    margin: 0;
+				    padding: 0;
+				}
+
+*,
+:before,
+:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100%;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+    background-color: #000;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+.title, .desc {
+    font-size: 2em;
+    padding: 1em 1em .25em 1em;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+.title:after {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 240px;
+    height: 4px;
+    margin-left: -120px;
+    content: none;
+    background-color: #fff;
+}
+.desc
+{
+	color: #000;
+    font-size: 11pt;
+}
+
+/* Clip text element */
+.clip-text {
+    font-size: 3.5em;
+    font-weight: bold;
+    line-height: 1;
+    position: relative;
+    display: inline-block;
+    /*margin: .25em;*/
+    padding: .2em .3em;
+    text-align: center;
+    /* Color fallback */
+    color: #fff;
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+}
+
+.clip-text:before,
+.clip-text:after {
+    position: absolute;
+    content: '';
+}
+
+/* Background */
+.clip-text:before {
+    z-index: -2;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: inherit;
+}
+
+/* Text Background (black zone) */
+.clip-text:after {
+    position: absolute;
+    z-index: -1;
+    top: .125em;
+    right: .125em;
+    bottom: .125em;
+    left: .125em;
+    background-color: #000;
+}
+
+/* Change the background position to display letter when the black zone isn't here */
+.clip-text--no-textzone:before {
+    background-position: -.65em 0;
+}
+
+.clip-text--no-textzone:after {
+    content: none;
+}
+
+/* Use Background-size cover for photo background and no-repeat background */
+.clip-text--cover,
+.clip-text--cover:before {
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+            background-size: cover;
+  background-position: 50% 50%;
+}
+
+.clip-text_tree {
+    background-image: url(imgs/textbground4.jpg);
+}
+
+#musicPlayer
+{
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+}
+#parisVid
+{
+	display: none;
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+-webkit-box-shadow: 0px 0px 22px 10px rgba(235,110,156,0.6);
+-moz-box-shadow: 0px 0px 22px 10px rgba(235,110,156,0.6);
+box-shadow: 0px 0px 22px 10px rgba(235,110,156,0.6);
+
+	border-radius: 26px 26px 26px 26px;
+-moz-border-radius: 26px 26px 26px 26px;
+-webkit-border-radius: 26px 26px 26px 26px;
+border: 0px solid #000000;
+}
+
+
+#descDec
+{
+	width: 90%;
+	height: 100px;
+    background-color: #eab9ff;
+    right: 0px;
+    bottom: 50px;
+    z-index: 1;
+    opacity: 0.9;
+}
+#decText
+{
+	font-family: "URW Chancery L", "cursive";
+	width: 80%;
+  	position: absolute;
+  	z-index: 3;
+  	top: 10px;
+  	left: 190px;
+    font-size: 110%;
+}
+#titleDec
+{
+    background-image: url(imgs/titles/december.png);
+    background-position: bottom left;
+    left: 10px;
+    bottom: 10px;
+    height: 265px;
+    width: 266px;    
+    z-index: 98;
+}
+@-moz-keyframes rotatebox /*--for firefox--*/{
+
+    from{
+        -moz-transform:rotate(0deg);
+    }       
+    to{
+        -moz-transform:rotate(-40deg);
+    }                       
+
+}
+
+@-webkit-keyframes rotatebox /*--for webkit--*/{
+
+    from{
+        -webkit-transform:rotate(0deg);
+    }       
+    to{
+        -webkit-transform:rotate(-40deg);
+    }                       
+
+}
+#titleJan
+{
+    background-image: url(imgs/titles/january.png);
+    background-position: center;
+    top: -25px;
+    right:50px;
+    height: 315px;
+    width: 135px;
+    -webkit-animation-duration: 2s;
+    z-index: 2;
+}
+#descJan1
+{
+	font-family: 'Marker Felt', 'fantasy';
+	top: 10%;
+	left: 0px; 
+	right: 0px; 
+	margin-left: 30%; 
+	margin-right: 70%; 
+	width: 600px;
+	padding: 10px;
+    font-size: 125%;
+    -webkit-animation-delay: 0.5s;
+}
+#descJan2
+{
+	font-family: 'Marker Felt', 'fantasy';
+	bottom: 5px;
+	left: 0px; 
+	right: 0px; 
+	margin-left: 70%; 
+	margin-right: 30%; 
+	width: 400px;
+	padding: 10px;
+    font-size: 125%;
+    text-align: left;
+    -webkit-animation-delay: 1.5s;
+}
+#titleFeb
+{
+    background-image: url(imgs/titles/february.jpg);
+    background-position: left;
+    background-color: #3c587b;
+    bottom: 10px;
+    height: 47px;
+    width: 100%;
+}
+#descFeb
+{
+	height: 600px;
+	width: 600px;
+	top: 50px;
+	right: -225px; 
+	margin-left: 50%; 
+	margin-right: 50%; 
+	font-family: 'Snell Roundhand', 'cursive';
+    font-size: 150%;
+	opacity: 0;
+
+}
+#titleMar
+{
+    background-image: url(imgs/titles/march.jpg);
+    background-position: left;
+    background-color: #6c4b89;
+    top: 100px;
+    right: 0px;
+    height: 50px;
+    width: 285px;
+    -webkit-animation-duration: 1s;
+    border-radius: 25px 0px 0px 0px;
+}
+
+#descMar
+{
+    right: 0px;
+    height: 0px;
+    width: 285px;
+    top: 100px;
+    background-color: #6c4b89;
+    bottom: 50px;
+    z-index: 1;
+    opacity: 0.8;
+    border-radius: 0px 0px 0px 25px;
+}
+
+#textMar
+{
+	padding: 5px;
+	text-align: left;
+	color: #fff;
+  margin-top: 25px;
+  height: 100%;
+    font-size: 145%;
+	font-family: 'Marker Felt, fantasy';
+	display: none;
+}
+#titleApr
+{
+    background-image: url(imgs/titles/april.png);
+    background-position: center;
+    top: 5px;
+	right: 5px;
+	position: absolute;
+    height: 176px;
+    width: 311px;
+    opacity: 0.8;
+    z-index: 5;
+}
+#aprHeader
+{
+    background-image: url(imgs/aprHeader.jpg);
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 44px;
+    opacity: 0.6;
+    border-radius: 10px 10px 10px 10px;
+    z-index: 1;
+}
+
+#aprText
+{
+	padding: 5px;
+	text-align: center;
+	color: #fff;
+    font-size: 125%;
+	font-family: 'New Century Schoolbook, TeX Gyre Schola, serif';
+	display: none;
+}
+
+#titleMay
+{
+    background-image: url(imgs/titles/may.jpg);
+    background-position: right;
+    background-color: #865154;
+    bottom: 5px;
+    left: 0px;
+    height: 50px;
+    width: 325px;
+    opacity: 0.8;
+    -webkit-animation-duration: 1s;
+}
+.mayText
+{
+	color: #000000;
+	text-align: left;
+	position: absolute;
+	font-family: URW Chancery L, cursive;
+    font-size: 115%;
+	display: none;
+}
+#mayText1
+{
+	height: 20%;
+	width: 25%;
+	left: 37%;
+	top: 2%;
+}
+#mayText2
+{
+	height: 20%;
+	width: 25%;
+	top: 30%;
+	left: 37%;
+}
+#mayText3
+{
+	height: 10%;
+	width: 60%;
+	bottom: 30%;
+	left: 2%;
+}
+#mayText4
+{
+	height: 20%;
+	width: 55%;
+	bottom: 5%;
+	left: 2%;
+}
+#titleJun
+{
+    background-image: url(imgs/titles/june.png);
+    background-position: center;
+    top: 2%;
+    left: 25%;
+    height: 214px;
+    width: 200px;
+    opacity: 0.8;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 0.5s;
+}
+#descJun
+{
+	position: absolute;
+	height: 0%;
+	width: 2px;
+	top: 37%;
+	left: 32.25%;
+	background-color: #eb6e9c;
+    border-radius: 10px 10px 10px 10px;
+    opacity: 0.7;
+}
+#textJun
+{
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 10px;
+    color: #ffffff;
+    text-align: center;
+    position: absolute;
+    font-family: Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
+    font-size: 125%;
+    display: none;
+}
+#titleJul
+{
+    background-image: url(imgs/titles/july.jpg);
+    background-position: bottom;
+    background-color: #ffed8f;
+    bottom: 0px;
+    right: 0px;
+    height: 75px;
+    width: 85px;
+    border-radius: 25px 0px 0px 25px;
+}
+#titleJulBar
+{
+    background-color: #ffed8f;
+    right: 0px;
+    bottom: 0px;
+    height: 100%;
+    width: 10px;
+}
+#textJul
+{
+    padding: 10px;
+    color: #000;
+    position: absolute;
+    bottom: 1%;
+    text-align: center;
+    position: absolute;
+    font-family: Papyrus, fantasy;
+    font-size: 60%;
+    display: none;
+}
+#titleAug
+{
+    background-image: url(imgs/titles/august.jpg);
+    background-position: top;
+    background-color: #4c847c;
+    top: 0px;
+	left: 0px; 
+	right: 0px; 
+	margin-left: auto; 
+	margin-right: auto; 
+    height: 45px;
+    width: 400px;
+    opacity: 1;
+    border-radius: 0px 0px 25px 25px;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 1s;
+}
+#textAug1
+{
+    padding: 10px;
+    color: #000;
+    position: absolute;
+    top: 65px;
+    width: 45%;
+    left: 22%;
+    text-align: center;
+    position: absolute;
+    font-family: Rockwell, Courier Bold, Courier, Georgia, Times, Times New Roman, serif;
+    font-size: 125%;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 1s;
+}
+#textAug2
+{
+    padding: 10px;
+    color: #000;
+    position: absolute;
+    top: 60%;
+    width: 65%;
+    left: 1%;
+    text-align: center;
+    position: absolute;
+    font-family: Rockwell, Courier Bold, Courier, Georgia, Times, Times New Roman, serif;
+    font-size: 125%;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 1s;
+}
+
+#titleSep
+{
+    background-image: url(imgs/titles/september.png);
+    background-position: bottom;
+    top: 0px;
+	left: 400px;
+    height: 131px;
+    width: 352px;
+    opacity: 1;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 1s;
+}
+#descSept
+{
+    width: 50%;
+    left: 2%;
+    top: 30%;
+    position: absolute;
+    height: 80%;
+}
+/*MESSENGER START*/
+
+.clear {
+  clear: both;
+}
+#descSept div
+{
+  max-width: 355px;
+  word-wrap: break-word;
+  margin-bottom: 5px;
+  line-height: 24px;
+    font-size: 125%;
+  /*padding: 20px;*/
+}
+#descSept div:after
+{
+
+  content: ""!important;
+  display: table!important;
+  clear: both!important;
+}
+
+.rightMessage {
+  position: relative;
+  padding: 10px 20px;
+  color: white;
+  background: #0B93F6;
+  border-radius: 25px 25px 0px 25px;
+  float: right;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 1s;
+}
+.rightMessage:before {
+  content: "" !important;
+  position: absolute;
+  z-index: 9;
+  bottom: -2px;
+  right: -7px;
+  height: 20px;
+  border-right: 20px solid #0B93F6;
+  border-bottom-left-radius: 16px 14px;
+  -webkit-transform: translate(0, -2px);
+}
+.rightMessage:after {
+  content: "" !important;
+  position: absolute;
+  z-index: 10;
+  bottom: -2px;
+  right: -56px;
+  width: 26px;
+  height: 20px;
+  background: #000;
+  border-bottom-left-radius: 10px;
+  -webkit-transform: translate(-30px, -2px);
+}
+
+.leftMessage {
+  position: relative;
+  padding: 10px 20px;
+  background: #E5E5EA;
+  border-radius: 25px 25px 25px 0px;
+  color: black;
+  float: left;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 1s;
+}
+.leftMessage:before {
+  content: "" !important;
+  position: absolute;
+  z-index: 12;
+  bottom: -2px;
+  left: -7px;
+  height: 20px;
+  border-left: 20px solid #E5E5EA;
+  border-bottom-right-radius: 16px 14px;
+  -webkit-transform: translate(0, -2px);
+}
+.leftMessage:after {
+  content: "" !important;
+  position: absolute;
+  z-index: 13;
+  bottom: -2px;
+  left: 4px;
+  width: 26px;
+  height: 20px;
+  background: #000;
+  border-bottom-right-radius: 10px;
+  -webkit-transform: translate(-30px, -2px);
+}
+
+/*MESSENGER END*/
+#titleOct
+{
+    background-image: url(imgs/titles/october.png);
+    background-position: bottom;
+    bottom: 25px;
+    right: 3%;
+    height: 200px;
+    width: 200px;
+    opacity: 1;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 1s;
+}
+#descOct
+{
+    top: 50%;
+    left: 1%;
+    height: 45%;
+    width: 20%;
+    position: absolute;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 1s;
+}
+#textOct
+{
+    color: #000;
+    text-align: center;
+    font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;
+    font-size: 115%;
+
+}
+#titleNov
+{
+    background-image: url(imgs/titles/november.jpg);
+    background-position: center;
+    bottom: 10px;
+	left: 0px; 
+	right: 0px; 
+	margin-left: auto; 
+	margin-right: auto; 
+    height: 65px;
+    width: 273px;
+    border-radius: 25px 25px 25px 25px;
+    box-shadow: inset 75px 0px 75px -50px #ff6e48, 
+                inset -75px 0px 75px -50px #ff6e48;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 1s;
+}
+.caption-container{
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-align: center;
+    -webkit-animation-duration: 1.5s;
+}
+
+.caption{
+    font-size: 105%;
+  font-weight: 300;
+  margin: 8px;
+}
+#textNov1
+{
+  left: 0.3%;
+  width: 33%;
+  bottom: 5%;
+}
+#textNov2
+{
+  left: 33.3%;
+  width: 33%;
+  top: 65%;
+}
+#textNov3
+{
+  right: 0.3%;
+  width: 33%;
+  bottom: 5%;
+}
+#heartDiv
+{
+    width: 25%;
+}
+#winningCaption
+{
+    display: none;
+}
+
+#startDiv
+{
+    text-align: center;
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    top:50px;
+    bottom: 0;
+    left: -100px;
+    right: 0;
+    margin: auto;
+}
+#startButton{
+  -moz-box-shadow:inset 1px 7px 19px 9px #b54b3a;
+  -webkit-box-shadow:inset 1px 7px 19px 9px #b54b3a;
+  box-shadow:inset 1px 7px 19px 9px #b54b3a;
+  background-color:#a73f2d;
+  -moz-border-radius:12px;
+  -webkit-border-radius:12px;
+  border-radius:12px;
+  border:6px solid #241d13;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:28px;
+  font-weight:bold;
+  padding:32px 76px;
+  text-decoration:none;
+  text-shadow:1px 0px 19px #7a2a1d;
+}
+
+#startButton:hover {
+  background-color:#b34332;
+}
+#startButton:active {
+  position:relative;
+  top:1px;
+}
+.intromessage
+{
+  display: none;
+  position: absolute;
+  text-align: center;
+  width: 400px;
+  height: 40px;
+  top:-100px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  font-size: 110%;
+}
+.intromessage.leftMessage
+{
+  bottom: -35%;
+  left: -350px;
+}
+.intromessage.rightMessage
+{
+  bottom: -35%;
+  right: -350px;
+}
