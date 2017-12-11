@@ -321,7 +321,7 @@ border: 0px solid #000000;
 	margin-right: 70%; 
 	width: 600px;
 	padding: 10px;
-    font-size: 125%;
+    font-size: 2.2rem;
     -webkit-animation-delay: 0.5s;
 }
 #descJan2
@@ -608,7 +608,7 @@ border: 0px solid #000000;
 }
 #descSept
 {
-    width: 50%;
+    width: 45%;
     left: 2%;
     top: 30%;
     position: absolute;
@@ -719,7 +719,7 @@ border: 0px solid #000000;
 }
 #descOct
 {
-    top: 50%;
+    top: 41%;
     left: 1%;
     height: 45%;
     width: 20%;
@@ -732,7 +732,7 @@ border: 0px solid #000000;
     color: #000;
     text-align: center;
     font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;
-    font-size: 115%;
+    font-size: 1.2rem;
 
 }
 #titleNov
@@ -767,20 +767,20 @@ border: 0px solid #000000;
 }
 #textNov1
 {
-  left: 0.3%;
-  width: 33%;
+  left: 0.34%;
+  width: 33.3%;
   bottom: 5%;
 }
 #textNov2
 {
-  left: 33.3%;
-  width: 33%;
+  left: 33.67%;
+  width: 33.3%;
   top: 65%;
 }
 #textNov3
 {
-  right: 0.3%;
-  width: 33%;
+  right: 0%;
+  width: 33.3%;
   bottom: 5%;
 }
 #heartDiv
