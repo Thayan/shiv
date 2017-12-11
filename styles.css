@@ -314,14 +314,14 @@ border: 0px solid #000000;
 #descJan1
 {
 	font-family: 'Marker Felt', 'fantasy';
-	top: 10%;
+	top: 5%;
 	left: 0px; 
 	right: 0px; 
 	margin-left: 30%; 
 	margin-right: 70%; 
 	width: 600px;
 	padding: 10px;
-    font-size: 2.2rem;
+    font-size: 1.7rem;
     -webkit-animation-delay: 0.5s;
 }
 #descJan2
@@ -334,7 +334,7 @@ border: 0px solid #000000;
 	margin-right: 30%; 
 	width: 400px;
 	padding: 10px;
-    font-size: 125%;
+    font-size: 1.7rem;
     text-align: left;
     -webkit-animation-delay: 1.5s;
 }
@@ -393,7 +393,7 @@ border: 0px solid #000000;
 	color: #fff;
   margin-top: 25px;
   height: 100%;
-    font-size: 145%;
+    font-size: 135%;
 	font-family: 'Marker Felt, fantasy';
 	display: none;
 }
@@ -855,3 +855,46 @@ border: 0px solid #000000;
   bottom: -35%;
   right: -350px;
 }
+
+@media screen and (min-width: 1225px) and (max-width: 1540px) {
+
+	#aprHeader
+	{
+	    font-size: 1.2rem;
+	}
+	#mayText3
+	{
+		width: 45%;
+		top: 50%;
+	}
+	#mayText4
+	{
+		width: 45%;
+	}
+	#textJun{
+		margin-top: 5%;
+	}
+	#descJun{
+		font-size: 1.2rem;	
+	}
+	#textJul{
+		font-size: 1.6rem;
+	}
+	#textAug2{
+		top: 45%;
+		width: 55%;
+	}
+	#crossWordContainer{
+		top: 15%;
+	}
+	.mayText{
+		font-size: 135%;
+	}
+}
+
+
+
+
+
+
+
